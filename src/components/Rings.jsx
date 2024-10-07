@@ -2,8 +2,10 @@ import { useGSAP } from "@gsap/react";
 import { Center, Float, useTexture } from "@react-three/drei";
 import gsap from "gsap";
 import { useCallback, useRef } from "react";
+import { useMediaQuery } from "react-responsive";
 
 const Rings = ({ position }) => {
+  const mobilemedia = useMediaQuery({ maxWidth: 768 });
   const refList = useRef([]);
   const getRef = useCallback((mesh) => {
     if (mesh && !refList.current.includes(mesh)) {
@@ -45,7 +47,7 @@ const Rings = ({ position }) => {
 
   return (
     <Center>
-      <group scale={0.5}>
+      <group scale={mobilemedia ? 0.3 : 0.5}>
         {Array.from({ length: 4 }, (_, index) => (
           <mesh key={index} ref={getRef}>
             <torusGeometry args={[(index + 1) * 2, 0.3]}></torusGeometry>

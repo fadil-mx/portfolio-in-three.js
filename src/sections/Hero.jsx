@@ -58,11 +58,11 @@ const Hero = () => {
   const sizes = calculateSizes(mobile, tablet, small);
   return (
     <section className="min-h-screen w-full flex flex-col relative">
-      <div className="w-full max-auto flex flex-col sm:mt-36 mt-20 c-space gap-3">
+      <div className="w-full max-auto flex flex-col sm:mt-36 mt-[180px]  c-space gap-3">
         <p className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans ">
-          Hi, I am Max <span className="waving-hand">✋</span>
+          Hi, I am FADIL<span className="waving-hand">✋</span>
         </p>
-        <p className="hero_tag text-gray-gradient">
+        <p className="hero_tag text-gray_gradient">
           Building Products & Brands
         </p>
       </div>
@@ -73,17 +73,19 @@ const Hero = () => {
             <PerspectiveCamera makeDefault position={[0, 10, 50]} />
             <Herocamera mobile={mobile}>
               <Hackerroom
-                // scale={0.1}
                 scale={mobile ? 0.1 : 0.16}
-                position={[2, -4, 2]}
+                position={mobile ? [1, 0, 2] : [2, -4, 2]}
                 rotation={[0, -Math.PI, 0]}
               />
             </Herocamera>
 
             <group>
               <Targets position={sizes.targetPosition} scale={2} />
-              <Reactlogo position={sizes.reactLogoPosition} scale={1} />
-              <Cube position={sizes.cubePosition} />
+              <Reactlogo
+                position={sizes.reactLogoPosition}
+                scale={mobile ? 0.6 : 1}
+              />
+              <Cube position={sizes.cubePosition} scale={mobile ? 1 : 2} />
               <Rings position={sizes.ringPosition} />
             </group>
 
@@ -93,7 +95,7 @@ const Hero = () => {
         </Canvas>
       </div>
       <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space ">
-        <a href="#contact" className="w-fit">
+        <a href="#about" className="w-fit">
           <Button
             isBeam
             text="Let's work together "
