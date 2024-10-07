@@ -15,43 +15,43 @@ import Herocamera from "../components/Herocamera";
 import Button from "../components/Button";
 
 const Hero = () => {
-  const x = useControls("HAckerroom", {
-    positionx: {
-      value: 0,
-      min: -10,
-      max: 10,
-    },
-    positiony: {
-      value: 0,
-      min: -10,
-      max: 10,
-    },
-    positionz: {
-      value: 0,
-      min: -10,
-      max: 10,
-    },
-    rotationx: {
-      value: 0,
-      min: -10,
-      max: 10,
-    },
-    rotationy: {
-      value: 0,
-      min: -10,
-      max: 10,
-    },
-    rotationz: {
-      value: 0,
-      min: -10,
-      max: 10,
-    },
-    scale: {
-      value: 1,
-      min: 0.1,
-      max: 2,
-    },
-  });
+  // const x = useControls("HAckerroom", {
+  //   positionx: {
+  //     value: 0,
+  //     min: -10,
+  //     max: 10,
+  //   },
+  //   positiony: {
+  //     value: 0,
+  //     min: -10,
+  //     max: 10,
+  //   },
+  //   positionz: {
+  //     value: 0,
+  //     min: -10,
+  //     max: 10,
+  //   },
+  //   rotationx: {
+  //     value: 0,
+  //     min: -10,
+  //     max: 10,
+  //   },
+  //   rotationy: {
+  //     value: 0,
+  //     min: -10,
+  //     max: 10,
+  //   },
+  //   rotationz: {
+  //     value: 0,
+  //     min: -10,
+  //     max: 10,
+  //   },
+  //   scale: {
+  //     value: 1,
+  //     min: 0.1,
+  //     max: 2,
+  //   },
+  // });
   const mobile = useMediaQuery({ maxWidth: 768 });
   const tablet = useMediaQuery({ maxWidth: 1024 });
   const small = useMediaQuery({ maxWidth: 440 });
