@@ -83,7 +83,7 @@ const About = () => {
                 I’m very flexible with time zone communications & locations
               </p>
               <p className="grid-subtext">
-                I&apos;m based in Rjieka, Croatia and open to remote work
+                I&apos;m based in India, kerala and open to remote work
                 worldwide.
               </p>
               <Button

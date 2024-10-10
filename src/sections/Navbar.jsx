@@ -24,7 +24,7 @@ const Navbar = () => {
             href="/"
             className="text-neutral-400 font-bold text-xl hover:text-white transition-colors "
           >
-            MAX
+            FADIL
           </a>
           <button
             className="text-neutral-400 font-bold text-xl focus:outline-none sm:hidden "
