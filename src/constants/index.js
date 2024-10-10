@@ -293,7 +293,7 @@ export const myProjects = [
             'Built using React for the frontend and Firebase for the backend, the app offers secure authentication, real-time updates, and media sharing capabilities. Deployed on Render for easy accessibility across devices, it ensures a fully responsive and user-friendly interface.'
         ,
         href: 'https://chat-app-0n25.onrender.com/chat',
-        texture: '/textures/project/chat.mp4',
+        texture: '/textures/project/chatapp.mp4',
         logo: '/assets/project-logo2.png',
         logoStyle: {
             backgroundColor: '#13202F',
